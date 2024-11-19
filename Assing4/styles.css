@@ -1,0 +1,90 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  .container {
+    border: 2px solid #333;
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-auto-rows: 100px;
+    gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .animated-text {
+    margin-top: 50px; 
+    font-size: 24px;
+    animation: colorChange 3s infinite;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: red;
+      rotate: 0deg;
+    }
+    50% {
+      color: blue;
+      rotate: 180deg;
+    }
+    100% {
+      color: green;
+      rotate: 360deg;
+    }
+  }
+
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid grey;
+    font-size: 16px;
+    margin-top: 500px;
+  }
+  
