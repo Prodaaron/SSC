@@ -73,6 +73,20 @@
       rotate: 360deg;
     }
   }
+  @keyframes colorChange2 {
+    0% {
+      color: yellow;
+      rotate: 0deg;
+    }
+    50% {
+      color: blue;
+      rotate: 180deg;
+    }
+    100% {
+      color: yellow;
+      rotate: 0deg;
+    }
+  }
 
 
   footer {
@@ -86,5 +100,28 @@
     border-top: 1px solid grey;
     font-size: 16px;
     margin-top: 500px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .animated-text {
+        animation: colorChange2 3s infinite;
+    }
+
+    .container {
+        height: auto;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        grid-auto-rows: 100px;
+        gap: 10px;
+    }
+
+    .grid-item {
+        background: #000;
+    }
   }
   
