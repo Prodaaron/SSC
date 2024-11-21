@@ -1,0 +1,183 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.1s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(197, 170, 129);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header h1 {
+    color: white;
+}
+
+header ul {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    gap: 20px;
+    padding: 20px 20px;
+    border-radius: 2rem;
+    border: 1px solid grey;
+    background-color: ivory;
+    opacity: .9;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    height: 500px;
+    background-image: url(DALLE2_1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 20px;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    background-color: ivory;
+}
+
+#Skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: ivory;
+    border: 1px solid ivory;
+    border-radius: 1.2rem;
+    margin-top: 10px;
+}
+
+#Skills ul {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+#Skills ul li {
+    color: black;
+    background-color: ivory;
+    padding: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#Skills ul li:hover {
+    filter: drop-shadow(10px 10px 90px ivory);
+}
+
+#Projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 1.2rem;
+    margin-top: 20px;
+    background-color: ivory;
+}
+
+#Projects table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+#Projects table th,
+#Projects table td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid ivory;
+    padding: 20px;
+    border-radius: 1.2rem;
+    margin-top: 20px;
+}
+
+#Contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 40%;
+}
+
+#Contact form input,
+#Contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+textarea {
+    height: 200px;
+}
+
+#Contact form button {
+    padding: 10px 20px;
+    border-radius: 1rem;
+    background-color: ivory;
+    border: none;
+    cursor: pointer;
+}
+
+#Contact form button:hover {
+    background-color: rgb(197, 170, 129);
+    border: 1px solid ivory;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(223, 220, 216);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    background-color: rgb(197, 170, 129);
+    border-top: 1px solid ivory;
+    margin-top: 20px;
+}
