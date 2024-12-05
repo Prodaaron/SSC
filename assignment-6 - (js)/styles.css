@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+.trail {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    animation: fadeOut 3s linear forwards;
+}
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+    }
+}
+#mouse {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
